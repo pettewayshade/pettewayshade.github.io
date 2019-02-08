@@ -10,33 +10,34 @@
 			  /* Put a 15-pixel margin at the bottom of the heading. */
 			  margin-bottom: 15px;
 			  /* Change the size of your font to 60 pixels high. */
-			  font-size: 60px;
+			  font-size: 40px;
 			  /* This will color the heading font white. */
 			  color: white;
 			  /* Align the text to the center of its enclosing element (e.g. div). */
 			  text-align: center;
 			  /* Underline the text. */
-			  text-decoration: underline;
+			  /*text-decoration: underline;
 			  /* The background of the heading element will now be black. */
-			  background-color: pink;
+			  background-color: rgb(175, 107, 118);
 			}
 		  
 			/* h2 heading tags */
 			h2 {
 			  /* Put a 15-pixel margin at the top of all h2 headings. */
 			  margin-top: 15px;
-			  margin-bottom: 15px;
+				margin-bottom: 15px;
 			  font-size: 40px;
 			  text-align: center;
-			  background-color: greenyellow;
+			  background-color: rgb(198, 146, 202);
 			}
 		  
 			/* h3 heading tags */
 			h3 {
 			  margin-top: 15px;
-			  font-size: 20px;
+				font-size: 20px;
+				color: white;
 			  text-align: center;
-			  background-color: orange;
+			  background-color: rgb(104, 75, 96);
 			}
 		  
 			/* All img tags */
@@ -68,12 +69,16 @@
 			  /* Give an element a solid border. */
 			  border-style: solid;
 			  /* Render the border 5 pixels thick. */
-			  border-width: 5px;
+			  border-width: 2px;
 			  /* Include bullets in the content flow. */
 			  /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
 			  list-style-position: inside;
 			}
 			section {
 				background-color: whitesmoke;
+				text-align: center;
+			}
+			img {
+				float: right;
 			}
 		  
