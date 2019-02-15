@@ -141,6 +141,7 @@ h4{
 .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
+  text-align: left;
 }
 
 
@@ -151,7 +152,7 @@ h4{
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: auto;
     top: 0;
   }
   .mastfoot {
@@ -165,6 +166,7 @@ h4{
   /* Handle the widths */
   .masthead,
   .mastfoot,
+  .column,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
@@ -183,6 +185,7 @@ h4 {
 }
 .row {
   margin-bottom: 20px;
+  width: auto;
 }
 .row .row {
   margin-top: 10px;
