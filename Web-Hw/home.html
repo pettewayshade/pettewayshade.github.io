@@ -32,28 +32,115 @@
   </head>
 
   <body>
+    <div class="site-wrapper">
 
-      <p></p>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-lg-8">
-          <p><img style="padding: 0 10px; float: left;" width="300" src="Images/Fig1.png" alt="City Lattitude vs. Max Temp">
-          The purpose of the project was to analyze how eather changes as you get closer
-            to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset 
-            of over 500 random cities.</p></div>
-        <div class="col-xs-6 col-lg-4"><img width="300" src="Images/Fig1.png" alt="City Lattitude vs. Max Temp"> 
-          <img width="300" src="Images/Fig2.png" alt="City Lattitude vs. Humidity">
-          <img width="300" src="Images/Fig3.png" alt="City Lattitude vs. Cloudiness">
-          <img width="300" src="Images/Fig4.png" alt="City Lattitude vs. Wind Speed">
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">Latitude</a>
+                  </div>
+                  <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li class="dropdown-header">Nav header</li>
+                          <li><a href="#">Separated link</a></li>
+                          <li><a href="#">One more separated link</a></li>
+                        </ul>
+                      <li><a href="comparisons.html">Comparison</a></li>
+                      <li><a href="data.html">Data</a></li>
+                      </li>
+                    </ul>
+                    <!----<ul class="nav navbar-nav navbar-right">
+                      <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                      <li><a href="../navbar-static-top/">Static top</a></li>
+                      <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                    </ul>-->
+                  </div><!--/.nav-collapse -->
+                </div><!--/.container-fluid -->
+              </nav>
+
+          
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-8">
+              <h3><b>Summary: Latitude vs. X</b></h3>
+              <hr>
+              <p><img style="padding: 0 10px; float: left;" width="300" src="Images/Fig1.png" alt="City Lattitude vs. Max Temp">
+              The purpose of the project was to analyze how eather changes as you get closer
+                to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset 
+                of over 500 random cities.</p>
+              <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. lattitude. Factors we looked 
+                at included: temperature, cloudiness, wind speed and humidity. This site provides the source data and visualizations created 
+                as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                <br>
+                <br>
+                <br>
+            </div>
+           
+
+            <div class="col-xs-6 col-lg-4">
+              <h3><b>Visualizations</b></h3>
+              <hr>
+              <img style="padding: 0 10px; float: left;" width="195" src="Images/Fig1.png" alt="City Lattitude vs. Max Temp">
+              <img style="padding: 0 10px; float: right;" width="195" src="Images/Fig2.png" alt="City Lattitude vs. Max Temp">
+              <br>
+              <img style="padding: 0 10px; float: left;" width="195" src="Images/Fig3.png" alt="City Lattitude vs. Max Temp">
+              <img style="padding: 0 10px; float: right;" width="195" src="Images/Fig4.png" alt="City Lattitude vs. Max Temp">
+                <!--<div class="column">
+                  <img width="300" src="Images/Fig1.png" alt="City Lattitude vs. Max Temp" style="width:100%"> 
+                </div>
+                <div class="column">
+                  <img width="300" src="Images/Fig2.png" alt="City Lattitude vs. Humidity" style="width:100%">
+                </div>
+                <div class="column">
+                  <img width="300" src="Images/Fig3.png" alt="City Lattitude vs. Cloudiness" style="width:100%">
+                </div>
+                <div class="column">
+                  <img width="300" src="Images/Fig4.png" alt="City Lattitude vs. Wind Speed" style="width:100%">
+              </div>-->
+            </div>
+
+          </div>
         </div>
+
+
+      
+          <div class="mastfoot">
+            <div class="inner">
+                <p>Site created by, Shade Petteway</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
+    </div>
 
-      <hr>
+    </div> 
 
-
-    </div> <!-- /container -->
-
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>

@@ -26,17 +26,20 @@ a:hover {
 
 html,
 body {
-  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 85%;
   background-color: #333;
-}
-body {
-  color: rgb(0, 0, 0);
-  text-align: center;
+  color: rgb(126, 123, 123);
+  text-align: left;
   /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
+section {
+  background-color: white;
 
+}
 h3 {
-  color: rgb(142, 76, 148);
+  color: rgb(148, 76, 98);
   font-size: 30px;
 }
 
@@ -87,6 +90,10 @@ h3 {
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
 }
+.navbar {
+  margin-bottom: 20px;
+}
+
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
@@ -159,11 +166,11 @@ h3 {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 500px) {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 65%;
   }
 }
 
@@ -177,9 +184,24 @@ h4 {
   margin-top: 10px;
   margin-bottom: 0;
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 [class*="col-"] {
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 15px;
   background-color: rgb(126, 41, 151);
   background-color: white;
   border: 1px solid rgb(253, 253, 253);
@@ -190,4 +212,4 @@ hr {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-s
+
