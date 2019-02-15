@@ -38,9 +38,13 @@ section {
   background-color: white;
 
 }
-h3 {
+h3{
   color: rgb(148, 76, 98);
   font-size: 30px;
+}
+
+h4{
+  color: rgb(148, 76, 98);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -151,7 +155,7 @@ h3 {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: auto;
     bottom: 0;
   }
   /* Start the vertical centering */
@@ -187,7 +191,7 @@ h4 {
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
   padding: 5px;
 }
 
